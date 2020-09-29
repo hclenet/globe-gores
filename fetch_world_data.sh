@@ -16,7 +16,7 @@ mkdir -p data
 # Raster data for base layers:
 
 # Natural Earth - Gray Earth with Shaded Relief, Hypsography, Ocean Bottom, and Drainages
-wget -P data http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/raster/GRAY_HR_SR_OB_DR.zip
+wget -P data http//www.naturalearthdata.com/download/10m/raster/GRAY_HR_SR_OB_DR.zip
 unzip -d data data/GRAY_HR_SR_OB_DR.zip
 
 # NASA - Visible Earth - Blue Marble Next Generation (December 2004)
@@ -32,6 +32,7 @@ wget -O data/nasa_visibleearth_nightlights.tiff http://eoimages.gsfc.nasa.gov/im
 
 # Vector data for some outlines:
 
-SCALE=10
-fetch_shapefile data/countries.json http://naciscdn.org/naturalearth/$SCALE/cultural/ne_$SCALE\_admin_0_countries.zip
+SCALE=10m
+#fetch_shapefile data/countries.json http://naciscdn.org/naturalearth/$SCALE/cultural/ne_$SCALE\_admin_0_countries.zip
 #fetch_shapefile data/lakes.json http://naciscdn.org/naturalearth/$SCALE/physical/ne_$SCALE\_lakes.zip
+fetch_shapefile data/countries.json http//www.naturalearthdata.com/download/$SCALE/cultural/ne_$SCALE\_admin_0_countries.zip
